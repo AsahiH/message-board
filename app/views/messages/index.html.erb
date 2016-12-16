@@ -16,12 +16,12 @@
 <%= form_for(@message) do |f| %>
     <div class="form-group">
         <label for="InputName">名前：</label>
-        <%= f.text_field :name %>
+        <%= f.text_field :name, class: "form-control" %>
     </div>
             
     <div class="form-group">
         <label for="TextareaBody">内容：</label>
-        <%= f.text_area :body %>
+        <%= f.text_area :body, class: "form-control" %>
     </div>
         
     <%= f.submit class: "btn btn-sm btn-primary" %>
